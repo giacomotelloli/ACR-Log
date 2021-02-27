@@ -1,0 +1,45 @@
+
+Qui sono descritte in modo dettagliato le tabelle con i loro attributi:
+
+Ragazzi= <id,nome(stringa),cognome(stringa),data_nascita(data),via_abitazione(stringa),luogo_nascita(stringa)>
+
+prendeTessera = <idRagazzo,idTessera,quota_versata(double)>
+
+Tessere= <id,anno(stringa),nome_tessera,costo>
+
+frequentaClassi=<anno,idRagazzo,idClasse>
+
+Classi=<id,nome>
+
+haEducatori=<anno,idClasse,idEducatore>
+
+Educatori=<nome,cognome>
+
+figlioDi=<idRagazzo,idGenitore>
+
+Genitore=<nome,cognome,numero_telefono,email>
+
+siPresenta=<idRagazzo,idAttivita>
+
+Attivita=<id,data,nome,obiettivo,descrizione,idClasse>
+
+Materiale=<nome,quantita,idAttivita>
+
+Spese=<id,idClasse,ragione,quantita,costo>
+
+
+---------------------------------------
+effettuaIscrizione=<idRagazzo,idIscrizione,quota_versata,foglioFirmato(bool)>
+Iscrizioni=<id,costo,anno(stringa)>
+--------------------------------------------
+
+Consegna=<idRagazzo,idPartecipazione,quota_versata,autorizzazioneFirmata(bool)>
+
+PartecipazioniFesta=<id,data,costo,luogo,idFesta>
+
+Festa=<id,nome>
+
+
+
+
+
