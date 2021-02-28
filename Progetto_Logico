@@ -13,17 +13,17 @@ Classi=<id,nome>
 
 haEducatori=<anno,idClasse,idEducatore>
 
-Educatori=<nome,cognome>
+Educatori=<id,nome,cognome>
 
 figlioDi=<idRagazzo,idGenitore>
 
-Genitore=<nome,cognome,numero_telefono,email>
+Genitore=<id,nome,cognome,numero_telefono,email>
 
 siPresenta=<idRagazzo,idAttivita>
 
-Attivita=<id,data,nome,obiettivo,descrizione,idClasse>
+Attivita=<id,data,obiettivo,descrizione,idClasse>
 
-Materiale=<nome,quantita,idAttivita>
+Materiale=<id,nome,quantita,idAttivita>
 
 Spese=<id,idClasse,ragione,quantita,costo>
 
