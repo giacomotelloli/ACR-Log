@@ -1,0 +1,44 @@
+
+----------------------------
+Tipi di Utente
+----------------------------
+
+- Educatore che accede con email e password
+- Responsabile che è un educatore 
+- Responsabile di settore
+
+------------------------------------
+
+Educatore : inserisce,modifica,e visualizza dati relativi ai ragazzi ed alla contabilità del gruppo
+
+Resp. di Sett: è un educatore che può inoltre solo visualizzare i dati relativi ai gruppi presenti nel suo settore
+
+Responsabile: è un educatore che può ammettere nuovi educatori che si vogliono registrare, inoltre può visualizzare i dati anagrafici e contabili relativi a tutti i gruppi
+
+
+
+-------------------------------------------------------------
+Caso D'uso : Registrazione Educatori
+
+Un educatore si registra  tramite il form ma solo i responsabili possono approvare la sua registrazione
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Caso D'uso : Promozione a Responsabile / Resp. di Settore
+
+Solo i responsabili possono modificare lo status di un educatore a resp. oppure a resp di settore ed ovviamente togliere anche l'incarico
+--------------------------------------------------------------------
+
+
+
+------------------------------------------------------------
+Caso D'uso: Educatore o Responsabile inserisce,toglie,modifica bambino
+
+Dopo aver effettuato il login un educatore nella sua schermata home 
+puo inserire,togliere,modificare i dati riguardanti i suoi ragazzi 
+
+------------------------------------------------------------
+
+
+
