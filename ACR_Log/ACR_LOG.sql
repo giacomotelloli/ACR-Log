@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Feb 28, 2021 alle 01:39
+-- Creato il: Mar 04, 2021 alle 23:52
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.2.34
 
@@ -68,7 +68,11 @@ CREATE TABLE `Consegna` (
 CREATE TABLE `Educatori` (
   `nome` varchar(50) NOT NULL,
   `cognome` varchar(50) NOT NULL,
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `is_resp` tinyint(1) NOT NULL,
+  `is_resp_sett` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
