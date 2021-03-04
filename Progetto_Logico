@@ -9,11 +9,13 @@ Tessere= <id,anno(stringa),nome_tessera,costo>
 
 frequentaClassi=<anno,idRagazzo,idClasse>
 
-Classi=<id,nome>
+Classi=<id,nome,id_settore>
+
+Settori=<id,nome>
 
 haEducatori=<anno,idClasse,idEducatore>
 
-Educatori=<id,nome,cognome>
+Educatori=<id,nome,cognome,email,password,is_resp(bool),is_resp_sett(bool),id_settore>
 
 figlioDi=<idRagazzo,idGenitore>
 
