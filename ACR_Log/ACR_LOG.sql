@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Mar 04, 2021 alle 23:52
+-- Creato il: Mar 05, 2021 alle 00:12
 -- Versione del server: 10.4.14-MariaDB
 -- Versione PHP: 7.2.34
 
@@ -43,7 +43,8 @@ CREATE TABLE `Attivita` (
 
 CREATE TABLE `Classi` (
   `id` int(11) NOT NULL,
-  `nome` int(11) NOT NULL
+  `nome` int(11) NOT NULL,
+  `id_settore` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -72,7 +73,8 @@ CREATE TABLE `Educatori` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `is_resp` tinyint(1) NOT NULL,
-  `is_resp_sett` tinyint(1) NOT NULL
+  `is_resp_sett` tinyint(1) NOT NULL,
+  `id_settore` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -219,6 +221,17 @@ CREATE TABLE `Ragazzi` (
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `Settori`
+--
+
+CREATE TABLE `Settori` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `siPresenta`
 --
 
@@ -307,6 +320,12 @@ ALTER TABLE `Ragazzi`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indici per le tabelle `Settori`
+--
+ALTER TABLE `Settori`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indici per le tabelle `Spese`
 --
 ALTER TABLE `Spese`
@@ -368,6 +387,12 @@ ALTER TABLE `PartecipazioniFesta`
 -- AUTO_INCREMENT per la tabella `Ragazzi`
 --
 ALTER TABLE `Ragazzi`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT per la tabella `Settori`
+--
+ALTER TABLE `Settori`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
